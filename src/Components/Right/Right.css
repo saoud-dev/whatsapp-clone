@@ -1,0 +1,53 @@
+.main-right {
+  width: 70%;
+  background-color: #202c33;
+  color: #d1d7db;
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.whatsapp {
+  text-align: center;
+  width: 80%;
+}
+
+.window-img img {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  display: block;
+}
+
+.window-heading {
+  font-size: 30px;
+  font-weight: 200;
+  margin-top: 20px;
+  color: #ffffff;
+}
+
+.window-des {
+  font-size: 15px;
+  color: #8796a1;
+  margin: 15px 0;
+  line-height: 1.5;
+}
+
+.window-btn button {
+  background-color: #00a884;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.window-btn button:hover {
+  background-color: #00856f;
+  transform: scale(1.05);
+}

@@ -1,0 +1,49 @@
+.main-left {
+  width: 70px;
+  height: 100vh;
+  background-color: #202c33;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-right: 2px solid #374045;
+  padding: 10px 0;
+}
+
+.top-icon {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.bottom-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.icon {
+  font-size: 30px !important;
+  color: #d1d7db;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.icon:hover {
+  color: #00a884;
+}
+
+.bottom-icon .MuiAvatar-root {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.bottom-icon .MuiAvatar-root:hover {
+  transform: scale(1.1);
+}

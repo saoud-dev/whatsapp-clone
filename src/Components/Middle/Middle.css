@@ -1,0 +1,101 @@
+.main-middle {
+  width: 430px;
+  background-color: #0f191f;
+  border-right: 2px solid #374045;
+}
+
+.top-sticky {
+  position: sticky;
+  top: 0;
+  background-color: #0f191f;
+  z-index: 10;
+}
+
+.chat-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.chat-name .chats {
+  font-size: 25px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.chats-icon {
+  font-size: 20px;
+  color: #d1d7db;
+  cursor: pointer;
+}
+
+.chats-icon svg {
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.chat-input {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 13px;
+  margin-top: 10px;
+  width: 95%;
+  margin: auto;
+}
+
+.search-icon {
+  color: #777;
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.search-input {
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  background: transparent;
+  color: #777;
+  outline: none;
+}
+
+.search-input::placeholder {
+  color: #aaa;
+}
+
+.msg-cate {
+  display: flex;
+  margin-left: 5px;
+}
+
+.msg-name {
+  color: #aaa;
+  font-size: 14px;
+  padding: 5px 13px;
+  margin: 7px 5px;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Scrollable msg-section */
+.msg-section {
+  height: calc(100vh - 180px);
+  overflow-y: auto;
+}
+
+.msg-section::-webkit-scrollbar {
+  width: 6px;
+}
+
+.msg-section::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 10px;
+}
+
+.msg-section::-webkit-scrollbar-track {
+  background-color: #0c1317;
+}
