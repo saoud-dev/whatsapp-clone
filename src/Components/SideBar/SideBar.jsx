@@ -1,5 +1,5 @@
 import React from "react";
-import "./Left.css";
+import "./SideBar.css";
 import Badge from "@mui/material/Badge";
 import ChatIcon from "@mui/icons-material/Chat";
 import AutoModeIcon from "@mui/icons-material/AutoMode";
@@ -17,8 +17,8 @@ function Left() {
           <ChatIcon className="icon" />
         </Badge>
         <AutoModeIcon className="icon" />
-        <GroupsIcon className="icon" />
         <CampaignIcon className="icon" />
+        <GroupsIcon className="icon" />
         <AutoAwesomeIcon className="icon" />
       </div>
 

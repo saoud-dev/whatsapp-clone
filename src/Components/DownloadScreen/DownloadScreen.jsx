@@ -1,5 +1,5 @@
 import React from "react";
-import "./Right.css";
+import "./DownloadScreen.css";
 
 function Right() {
   return (

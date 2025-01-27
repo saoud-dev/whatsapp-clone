@@ -1,6 +1,6 @@
 import { Avatar } from "@mui/material";
 import { useState, useEffect } from "react";
-import "./UnknowMsg.css";
+import "./Messages.css";
 
 function UnknowMsg({ onClick }) {
   const [receivers, setReceivers] = useState([]);

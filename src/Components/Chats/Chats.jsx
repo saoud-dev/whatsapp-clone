@@ -1,9 +1,9 @@
 import React from "react";
-import "./Middle.css";
+import "./Chats.css";
 import AddCommentIcon from "@mui/icons-material/AddComment";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import SearchIcon from "@mui/icons-material/Search";
-import UnknowMsg from "./unknowMsg";
+import Messages from "./Messages";
 
 function Middle({ onClickMessage }) {
   return (
@@ -31,7 +31,7 @@ function Middle({ onClickMessage }) {
       </div>
 
       <div className="msg-section">
-        <UnknowMsg onClick={onClickMessage} />
+        <Messages onClick={onClickMessage} />/
       </div>
     </div>
   );

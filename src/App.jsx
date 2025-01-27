@@ -1,21 +1,25 @@
 import React, { useState } from "react";
-import Left from "./Components/Left/Left";
-import Middle from "./Components/Middle/Middle";
-import Right from "./Components/Right/Right";
-import ChatPage from "./Components/ChatPage/ChatPage";
+import SideBar from "./Components/SideBar/SideBar";
+import Chats from "./Components/Chats/Chats";
+import DownloadScreen from "./Components/DownloadScreen/DownloadScreen";
+import Conversation from "./Components/Conversation/Conversation";
 
 function App() {
   const [selectedUser, setSelectedUser] = useState(null);
 
-  const openChatPage = (user) => {
-    setSelectedUser(user);
+  const openChatPage = (receiver) => {
+    setSelectedUser(receiver);
   };
 
   return (
     <div className="app_body">
-      <Left />
-      <Middle onClickMessage={openChatPage} />
-      {selectedUser ? <ChatPage user={selectedUser} /> : <Right />}
+      <SideBar />
+      <Chats onClickMessage={openChatPage} />
+      {selectedUser ? (
+        <Conversation receiver={selectedUser} />
+      ) : (
+        <DownloadScreen />
+      )}
     </div>
   );
 }

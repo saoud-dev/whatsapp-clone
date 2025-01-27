@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./ChatPage.css";
+import "./Conversation.css";
 import { Avatar } from "@mui/material";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import SearchIcon from "@mui/icons-material/Search";

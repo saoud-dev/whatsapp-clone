@@ -38,9 +38,9 @@
 .chat-input {
   display: flex;
   align-items: center;
-  padding: 5px;
+  padding: 6px 14px !important;
   background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 13px;
+  border-radius: 10px !important;
   margin-top: 10px;
   width: 95%;
   margin: auto;
@@ -69,6 +69,10 @@
 .msg-cate {
   display: flex;
   margin-left: 5px;
+}
+
+.msg-name:hover {
+  background: rgba(255, 255, 255, 0.21);
 }
 
 .msg-name {
