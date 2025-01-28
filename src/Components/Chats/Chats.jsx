@@ -5,7 +5,7 @@ import MoreVertIcon from "@mui/icons-material/MoreVert";
 import SearchIcon from "@mui/icons-material/Search";
 import Messages from "./Messages";
 
-function Middle({ onClickMessage }) {
+function Chats({ onClickMessage }) {
   return (
     <div className="main-middle">
       <div className="top-sticky">
@@ -37,4 +37,4 @@ function Middle({ onClickMessage }) {
   );
 }
 
-export default Middle;
+export default Chats;

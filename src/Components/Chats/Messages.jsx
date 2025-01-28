@@ -2,7 +2,7 @@ import { Avatar } from "@mui/material";
 import { useState, useEffect } from "react";
 import "./Messages.css";
 
-function UnknowMsg({ onClick }) {
+function Messages({ onClick }) {
   const [receivers, setReceivers] = useState([]);
 
   useEffect(() => {
@@ -60,4 +60,4 @@ function UnknowMsg({ onClick }) {
   );
 }
 
-export default UnknowMsg;
+export default Messages;

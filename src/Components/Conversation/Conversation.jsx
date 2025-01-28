@@ -8,7 +8,7 @@ import AttachFileIcon from "@mui/icons-material/AttachFile";
 import MicIcon from "@mui/icons-material/Mic";
 import SendIcon from "@mui/icons-material/Send";
 
-function ChatPage({ user }) {
+function Conversation({ user }) {
   const [typedMessage, setTypedMessage] = useState("");
   const [messages, setMessages] = useState([]);
 
@@ -62,7 +62,12 @@ function ChatPage({ user }) {
         "Content-type": "application/json; charset=UTF-8",
       },
     })
-      .then((response) => response.json())
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Failed to send message");
+        }
+        return response.json();
+      })
       .then((data) => {
         console.log("Message sent:", data);
       })
@@ -120,4 +125,4 @@ function ChatPage({ user }) {
   );
 }
 
-export default ChatPage;
+export default Conversation;

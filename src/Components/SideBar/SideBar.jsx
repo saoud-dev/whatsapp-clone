@@ -9,7 +9,7 @@ import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
 import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import { Avatar } from "@mui/material";
 
-function Left() {
+function SideBar() {
   return (
     <div className="main-left">
       <div className="top-icon">
@@ -30,4 +30,4 @@ function Left() {
   );
 }
 
-export default Left;
+export default SideBar;

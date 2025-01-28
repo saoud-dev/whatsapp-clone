@@ -1,7 +1,7 @@
 import React from "react";
 import "./DownloadScreen.css";
 
-function Right() {
+function DownloadScreen() {
   return (
     <div className="main-right">
       <div className="whatsapp">
@@ -24,4 +24,4 @@ function Right() {
   );
 }
 
-export default Right;
+export default DownloadScreen;

@@ -15,11 +15,7 @@ function App() {
     <div className="app_body">
       <SideBar />
       <Chats onClickMessage={openChatPage} />
-      {selectedUser ? (
-        <Conversation receiver={selectedUser} />
-      ) : (
-        <DownloadScreen />
-      )}
+      {selectedUser ? <Conversation user={selectedUser} /> : <DownloadScreen />}
     </div>
   );
 }
