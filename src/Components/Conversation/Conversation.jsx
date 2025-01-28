@@ -62,12 +62,7 @@ function ChatPage({ user }) {
         "Content-type": "application/json; charset=UTF-8",
       },
     })
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Failed to send message");
-        }
-        return response.json();
-      })
+      .then((response) => response.json())
       .then((data) => {
         console.log("Message sent:", data);
       })
